@@ -13862,7 +13862,7 @@ function getPNG(bin) {
     return PNG.sync.read(bin);
 }
 
-function loadImage(base64)
+function loadBase64ImageData(base64)
 {
     var binary_string = Buffer.from(base64, 'base64');
 
@@ -13872,7 +13872,7 @@ function loadImage(base64)
 }
 
 window.getPNG = getPNG;
-window.loadImage = loadImage;
+window.loadBase64ImageData = loadBase64ImageData;
 
 }).call(this,require("buffer").Buffer)
 },{"atob":52,"buffer":9,"pngjs":72}],52:[function(require,module,exports){

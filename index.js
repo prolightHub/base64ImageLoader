@@ -16,7 +16,7 @@ function loadPNGBase64(base64, canvas, pjs)
 {
     var ctx = canvas.getContext('2d');
 
-    var png = loadImage(base64.split(",")[1]);
+    var png = loadBase64ImageData(base64.split(",")[1]);
 
     putImageData(ctx, {
         data: png.data,
